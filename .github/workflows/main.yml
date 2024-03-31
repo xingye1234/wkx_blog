@@ -14,7 +14,7 @@ jobs:
     - name: Node环境版本  ️
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 20
     - name: 安装 Pnpm  
       uses: pnpm/action-setup@v2
       id: pnpm-install
@@ -30,6 +30,6 @@ jobs:
     - name: 部署  
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages
+        branch: wkx-pages
         folder: out
         clean: true
