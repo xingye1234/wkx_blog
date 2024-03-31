@@ -1,11 +1,12 @@
 "use client";
-import React, { useContext } from "react";
+import React from "react";
 import { Button } from "./ui/moving-border";
-import { showContent } from "./Sparkles";
 
-export function MovingBorderDemo() {
-  const {setShowMainContent} = useContext(showContent);
-
+export function MovingBorderDemo({
+  setShowMainContent,
+}: {
+  setShowMainContent: (val:boolean) => void;
+}) {
   return (
     <div>
       <Button

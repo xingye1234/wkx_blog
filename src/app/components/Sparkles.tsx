@@ -3,8 +3,6 @@ import React, {useState ,createContext } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { MovingBorderDemo } from "./MovieButton";
 
-export const showContent = createContext({});
-
 export function SparklesPreview({ children }: { children?: React.ReactNode }) {
   
   const [showMainContent, setShowMainContent] = useState(false);
@@ -22,7 +20,7 @@ export function SparklesPreview({ children }: { children?: React.ReactNode }) {
           particleColor="#FFFFFF"
         />
       </div>
-      <showContent.Provider value={{showMainContent, setShowMainContent}}>
+     
         {showMainContent ? (
           children
         ) : (
@@ -31,10 +29,9 @@ export function SparklesPreview({ children }: { children?: React.ReactNode }) {
               Wang KeXing
             </h1>
 
-            <MovingBorderDemo />
+            <MovingBorderDemo setShowMainContent={setShowMainContent}/>
           </div>
         )}
-      </showContent.Provider>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import DarkModeButton from "./DarkModeButton";
-import NavButton from "./NavButton";
 import {ToolTip} from "./ToolTip";
 import Avator from "./Avatar";
 export default function Header() {
