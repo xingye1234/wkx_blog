@@ -8,7 +8,7 @@ export function TabsContent() {
       title: "Product",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br bg-[#d1d5db] to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           
           <DummyContent />
         </div>
@@ -18,7 +18,7 @@ export function TabsContent() {
       title: "Services",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br bg-[#d1d5db] to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           
           <DummyContent />
         </div>
@@ -28,7 +28,7 @@ export function TabsContent() {
       title: "Playground",
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br bg-[#d1d5db] to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db]  to-violet-900">
           
           <DummyContent />
         </div>
@@ -38,7 +38,7 @@ export function TabsContent() {
       title: "Content",
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br bg-[#d1d5db] to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db]  to-violet-900">
          
           <DummyContent />
         </div>
@@ -48,7 +48,7 @@ export function TabsContent() {
       title: "Random",
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br bg-[#d1d5db] to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           <DummyContent />
         </div>
       ),
@@ -56,7 +56,7 @@ export function TabsContent() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full  items-start justify-start mt-24">
+    <div className="h-[20rem] md:h-[38rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full  items-start justify-start mt-1">
       <Tabs tabs={tabs} />
     </div>
   );

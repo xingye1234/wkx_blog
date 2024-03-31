@@ -1,10 +1,9 @@
 "use client";
-import React, {useState ,createContext } from "react";
+import React, { useState } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { MovingBorderDemo } from "./MovieButton";
 
 export function SparklesPreview({ children }: { children?: React.ReactNode }) {
-  
   const [showMainContent, setShowMainContent] = useState(false);
 
   return (
@@ -20,18 +19,20 @@ export function SparklesPreview({ children }: { children?: React.ReactNode }) {
           particleColor="#FFFFFF"
         />
       </div>
-     
-        {showMainContent ? (
-          children
-        ) : (
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center dark:text-white relative z-20 mb-6">
-              Wang KeXing
-            </h1>
 
-            <MovingBorderDemo setShowMainContent={setShowMainContent}/>
-          </div>
-        )}
+      {showMainContent ? (
+        children
+      ) : (
+      <div className="flex flex-col items-center justify-center ">
+        <h1
+          className="animate-fade-down animate-duration-1000 animate-delay-500 animate-ease-out md:text-7xl text-3xl lg:text-6xl font-bold text-center dark:text-white relative z-20 mb-6"
+        >
+          Wang KeXing
+        </h1>
+
+        <MovingBorderDemo setShowMainContent={setShowMainContent} />
+      </div>
+      )}
     </div>
   );
 }

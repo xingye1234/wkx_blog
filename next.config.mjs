@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repo = 'wkx_blog'
+const repo = "wkx_blog";
 let assetPrefix = `/${repo}/`;
 
 // 用于为应用设置基础路径
