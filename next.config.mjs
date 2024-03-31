@@ -25,6 +25,7 @@ const nextConfig = {
     "@douyinfe/semi-icons",
     "@douyinfe/semi-illustrations",
   ],
+  output:"export"
 };
 
 export default nextConfig;
