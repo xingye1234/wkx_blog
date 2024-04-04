@@ -8,7 +8,9 @@ export default function Avator() {
   return (
     <Avatar size="default">
       <Image
-        src="/img/avatar.jpg"
+        src={
+          `${process.env.imgPath}/img/avatar.jpg`
+        }
         alt="This is a art picture"
         width={30}
         height={30}
