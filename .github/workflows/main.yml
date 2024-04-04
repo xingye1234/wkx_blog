@@ -31,5 +31,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: wkx-pages
-        folder: .next
+        folder: out
         clean: true
