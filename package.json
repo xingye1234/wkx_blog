@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "prod": "next build && next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db": "npx prisma db push"
   },
   "dependencies": {
     "@douyinfe/semi-icons": "^2.55.1",
     "@douyinfe/semi-ui": "^2.55.1",
+    "@prisma/client": "^5.12.1",
     "@radix-ui/themes": "^3.0.1",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
@@ -19,7 +21,9 @@
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.24",
     "next": "14.1.4",
+    "next-auth": "5.0.0-beta.16",
     "next-themes": "^0.3.0",
+    "prisma": "^5.12.1",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.2",

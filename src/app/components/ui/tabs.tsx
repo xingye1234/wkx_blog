@@ -68,7 +68,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative italic block text-black dark:text-white">
               {tab.title}
             </span>
           </button>

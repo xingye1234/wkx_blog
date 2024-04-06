@@ -5,8 +5,8 @@ import { Tabs } from "./ui/tabs";
 export function TabsContent() {
   const tabs = [
     {
-      title: "Product",
-      value: "product",
+      title: "个人信息",
+      value: "个人信息",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           
