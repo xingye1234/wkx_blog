@@ -18,18 +18,18 @@ const nextConfig = {
   env: {
     imgPath: assetPrefix,
   },
-  // assetPrefix,
-  // basePath,
-  // reactStrictMode: true,
-  // images: {
-  //   unoptimized: true,
-  // },
+  assetPrefix,
+  basePath,
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   transpilePackages: [
     "@douyinfe/semi-ui",
     "@douyinfe/semi-icons",
     "@douyinfe/semi-illustrations",
   ],
-  // output:"export",
+  output:"export",
 };
 
 export default nextConfig;
