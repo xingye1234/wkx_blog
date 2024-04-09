@@ -15,8 +15,8 @@ export function TabsContent() {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "技术栈",
+      value: "技术栈",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           
@@ -25,8 +25,8 @@ export function TabsContent() {
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "工作经历",
+      value: "工作经历",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db]  to-violet-900">
           
@@ -35,8 +35,8 @@ export function TabsContent() {
       ),
     },
     {
-      title: "Content",
-      value: "content",
+      title: "项目经验",
+      value: "项目经验",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db]  to-violet-900">
          
@@ -45,8 +45,8 @@ export function TabsContent() {
       ),
     },
     {
-      title: "Random",
-      value: "random",
+      title: "个人展望",
+      value: "个人展望",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br dark:bg-[#3f3f46] bg-[#d1d5db] to-violet-900">
           <DummyContent />

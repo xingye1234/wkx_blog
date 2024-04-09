@@ -14,6 +14,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+      },
       backgroundColor: {},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -14,7 +14,7 @@ export default function Avator() {
   });
 
   return (
-    <Link href={show ? "/dashboard" : ""}>
+    <Link href={show ? "/dashboard" : ""} className="animate-fade-right animate-duration-1000 animate-delay-100">
       <Avatar size="default">
         <Image
           src={`${process.env.imgPath}/img/avatar.jpg`}
