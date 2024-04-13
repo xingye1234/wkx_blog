@@ -13,6 +13,8 @@ export function middleware(request: NextRequest) {
   const cookie = cookies();
   const url = request.nextUrl.pathname;
 
+  console.log('------->',url);
+
   const auth = cookie.get("token");
 
   if (url.startsWith("/dashboard")) {
