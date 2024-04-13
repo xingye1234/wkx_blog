@@ -1,7 +1,10 @@
-import React from 'react'
-
-export default function page() {
+import React from "react";
+import { fetchUsers } from "@/app/lib/action";
+export default async function page() {
+  // const users = await fetchUsers()
   return (
-    <div>account</div>
-  )
+    <div className="animate-fade-left animate-duration-1000 animate-delay-100">
+      account
+    </div>
+  );
 }

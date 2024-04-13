@@ -1,7 +1,9 @@
 "use client";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { IconLock, IconUser } from "@douyinfe/semi-icons";
-import { Form, Tooltip } from "@douyinfe/semi-ui";
+import { Form } from "@douyinfe/semi-ui";
+import { useRouter } from "next/navigation";
+import { Toast } from '@douyinfe/semi-ui';
 
 type username = {
   username: string;
@@ -14,8 +16,17 @@ export default function LoginForm() {
     watch,
     formState: { errors },
   } = useForm<username>();
-  const onSubmit: SubmitHandler<username> = (data) => {
-    console.log(data);
+  const router = useRouter();
+  const onSubmit: SubmitHandler<username> = async (data) => {
+    const result = await fetch("/api/login", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }).then((res) => res.json());
+    if (result.code == 200) {
+      router.replace("/dashboard");
+    }else{
+      Toast.error(result.msg)
+    }
   };
 
   return (

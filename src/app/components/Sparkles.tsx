@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { MovingBorderDemo } from "./MovieButton";
+import {TabsContent} from "./Tabs";
 
 export function SparklesPreview({ children }: { children?: React.ReactNode }) {
   const [showMainContent, setShowMainContent] = useState(false);
@@ -21,7 +22,7 @@ export function SparklesPreview({ children }: { children?: React.ReactNode }) {
       </div>
 
       {showMainContent ? (
-        children
+        <TabsContent setShowMainContent={setShowMainContent}/>
       ) : (
       <div className="flex flex-col items-center justify-center ">
         <h1

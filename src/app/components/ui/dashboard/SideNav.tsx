@@ -1,12 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
-import { IconHome } from "@douyinfe/semi-icons";
+import { IconHome, IconExit } from "@douyinfe/semi-icons";
+import Dialog from "./Dialog";
+
 
 export default function SideNav() {
   return (
-    <div className="w-full text-center">
-      <h1 className="py-4 text-3xl font-bold">后台管理</h1>
+    <div className="w-full text-center h-full">
+      <h1 className="py-4 text-3xl font-bold py-12 bg-[#2563eb] mb-2 text-white">
+        后台管理
+      </h1>
       <div>
         <Link
           href="/dashboard"
@@ -16,8 +20,9 @@ export default function SideNav() {
           首页
         </Link>
       </div>
-      <div className="flex flex-col">
+      <div className="relative h-full">
         <NavLinks />
+        <Dialog title="退出登录"/>
       </div>
     </div>
   );
