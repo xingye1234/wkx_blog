@@ -7,13 +7,13 @@ let assetPrefix = isProd ? `/${repo}/` : ''
 // 这在将应用部署到子目录下时特别有用，因为它允许您指定应用所在的目录
 let basePath = `/${repo}`;
 
-// const isGithubActions = process.env.GITHUB_ACTIONS || false;
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-// if (isGithubActions) {
-//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
-//   assetPrefix = `/${repo}/`;
-//   basePath = `/${repo}`;
-// }
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
 const nextConfig = {
   env: {
     imgPath: assetPrefix,
@@ -29,7 +29,6 @@ const nextConfig = {
     "@douyinfe/semi-icons",
     "@douyinfe/semi-illustrations",
   ],
-  output:"export",
 };
 
 export default nextConfig;
