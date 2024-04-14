@@ -30,7 +30,7 @@ const nextConfig = {
     "@douyinfe/semi-illustrations",
   ],
   distDir:"out",
-  output:'standalone',
+  // output:'standalone',
 };
 
 export default nextConfig;
