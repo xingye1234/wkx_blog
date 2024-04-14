@@ -29,8 +29,8 @@ const nextConfig = {
     "@douyinfe/semi-icons",
     "@douyinfe/semi-illustrations",
   ],
-  // distDir:"out",
-  output:'standalone'
+  distDir:"out",
+  output:'export'
 };
 
 export default nextConfig;
