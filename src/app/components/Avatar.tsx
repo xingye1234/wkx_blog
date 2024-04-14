@@ -5,16 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Avator() {
-  const [show, setShow] = React.useState(false);
-  useEffect(() => {
-    const user = sessionStorage.getItem("user");
-    if (user === "wkx") {
-      setShow(true);
-    }
-  });
-
+ 
   return (
-    <Link href={show ? "/dashboard" : ""} className="animate-fade-right animate-duration-1000 animate-delay-100">
+    <Link href="" className="animate-fade-right animate-duration-1000 animate-delay-100">
       <Avatar size="default">
         <Image
           src={`${process.env.imgPath}/img/avatar.jpg`}
