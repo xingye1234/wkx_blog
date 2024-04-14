@@ -30,7 +30,7 @@ jobs:
     # JamesIves/github-pages-deploy-action@v4
       uses: peaceiris/actions-gh-pages@v4
       with:
-        deploy_key: ${{ secrets.ACCESS_TOKEN }}
+        github_token: ${{ secrets.ACCESS_TOKEN }}
         publish_dir: ./out
         # branch: wkx-pages
         # folder: out
