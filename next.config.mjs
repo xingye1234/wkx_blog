@@ -29,7 +29,7 @@ const nextConfig = {
     "@douyinfe/semi-icons",
     "@douyinfe/semi-illustrations",
   ],
-  distDir:"out",
+  // distDir:"out",
   output:'standalone'
 };
 
