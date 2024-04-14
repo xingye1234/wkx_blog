@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7059],{97059:function(n,e,t){t.d(e,{loadExternalPauseInteraction:function(){return a}});async function a(n,e=!0){await n.addInteractor("externalPause",async n=>{let{Pauser:e}=await t.e(384).then(t.bind(t,40384));return new e(n)},e)}}}]);
