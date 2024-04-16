@@ -31,9 +31,18 @@ model Article {
   authorId    Int
   image       String
   title       String
-  author      Users     @relation(fields: [authorId], references: [id])
+  author      Users    @relation(fields: [authorId], references: [id]) //表关联
   createdTime DateTime @default(now()) @map("created_time")
   updatedTime DateTime @updatedAt @map("updated_time")
 
   @@map("article")
+}
+
+model Label {
+  id          Int      @id @default(autoincrement())
+  title       String   @unique
+  createdTime DateTime @default(now()) @map("created_time")
+  updatedTime DateTime @updatedAt @map("updated_time")
+
+  @@map("label")
 }
