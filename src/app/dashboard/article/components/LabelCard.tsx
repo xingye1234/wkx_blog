@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { Card as Cards, Typography } from "@douyinfe/semi-ui";
+import { IconDelete } from "@douyinfe/semi-icons";
+import Dialog from "./Dialog";
 
 export default function Card({
   title,
@@ -11,19 +13,28 @@ export default function Card({
   link: string;
   content: any[];
 }) {
-  const { Text } = Typography;
+  const handleDelLabel = (id: number) => () => {
+    alert(id);
+  };
 
   return (
-    <Cards title={title} headerExtraContent={<Text link>{link}</Text>}>
+    <div className="my-4">
+      <Cards title={title} headerExtraContent={<Dialog title={link} />}>
       {content.map((_, index) => (
         <li
           draggable
-          className="text-2xl px-2 py-2  transition-all rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-md border-soild border-gray-300 border"
+          className="flex justify-between text-xl px-3 py-2  transition-all rounded-lg cursor-pointer hover:shadow-md border-soild border-gray-300 border"
           key={_.id}
         >
           <p>{_.title}</p>
+          <IconDelete
+            size="extra-large"
+            className="hover:text-red-500"
+            onClick={handleDelLabel(_.id)}
+          />
         </li>
       ))}
     </Cards>
+    </div>
   );
 }

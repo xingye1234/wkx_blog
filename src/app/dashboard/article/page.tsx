@@ -1,6 +1,5 @@
 import React from "react";
 import LabelCard from "./components/LabelCard";
-import ArticleCard from "./components/ArticleCard";
 
 export default async function page() {
   const {data:{label,article}} = await fetch("http://localhost:3000/api/article").then(res => res.json())
@@ -11,8 +10,8 @@ export default async function page() {
         </LabelCard>
       </div>
       <div>
-        <ArticleCard title="Article" link="新增文章" content={article}>
-        </ArticleCard>
+        <LabelCard title="Article" link="新增文章" content={article}>
+        </LabelCard>
       </div>
     </div>
   );
