@@ -18,14 +18,9 @@ import {
   IconIdCard,
   IconLayers,
   IconArticle,
-  IconReply,
 } from "@douyinfe/semi-icons";
 
-export function TabsContent({
-  setShowMainContent,
-}: {
-  setShowMainContent: (val: boolean) => void;
-}) {
+export function TabsContent() {
   const tabs = [
     {
       title: "个人信息",
@@ -68,11 +63,6 @@ export function TabsContent({
   return (
     <div className="h-[20rem] md:min-h-[38rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full  items-start justify-start mt-1">
       <Tabs tabs={tabs} />
-      <IconReply
-        size="extra-large"
-        className="absolute top-5 right-5 cursor-pointer"
-        onClick={() => setShowMainContent(false)}
-      />
     </div>
   );
 }

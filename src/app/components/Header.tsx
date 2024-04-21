@@ -9,9 +9,12 @@ export default function Header() {
         <Avator />
         <div className="flex animate-fade-left animate-duration-1000 animate-delay-100">
           {/* <NavButton /> */}
-          {/* <Link href="/posts" className="mr-12 font-bold hover:text-blue-600">
+          <Link href="/posts" className="mr-10 font-bold hover:text-blue-600">
             Posts
-          </Link> */}
+          </Link>
+          <Link href="/resume" className="mr-10 font-bold hover:text-blue-600">
+            Resume
+          </Link>
           <ToolTip />
           <DarkModeButton />
         </div>
