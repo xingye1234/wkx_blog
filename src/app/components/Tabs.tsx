@@ -166,7 +166,7 @@ const ProjectHistory = () => {
   return (
     <ScrollArea type="always" scrollbars="vertical">
       <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="teal" trim="start">
+        <Heading size="8" mb="2" color="gray" trim="start">
           XX大屏可视化
         </Heading>
         <Flex direction="column" gap="4">
@@ -185,7 +185,7 @@ const ProjectHistory = () => {
       </Box>
 
       <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="teal" trim="start">
+        <Heading size="8" mb="2" color="gray" trim="start">
           xx中心管理系统
         </Heading>
         <Flex direction="column" gap="4">
@@ -200,7 +200,7 @@ const ProjectHistory = () => {
       </Box>
 
       <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="teal" trim="start">
+        <Heading size="8" mb="2" color="gray" trim="start">
           xx美术馆数字藏品库
         </Heading>
         <Flex direction="column" gap="4">
@@ -216,7 +216,7 @@ const ProjectHistory = () => {
         </Flex>
       </Box>
       <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="teal" trim="start">
+        <Heading size="8" mb="2" color="gray" trim="start">
           xx美术馆数字藏品库管理系统
         </Heading>
         <Flex direction="column" gap="4">

@@ -2,8 +2,9 @@
 import React from "react";
 import { Modal } from "@douyinfe/semi-ui";
 import Link from "next/link";
+import AddLabelForm from "./AddLabelForm";
 
-export default function Dialog({ title }: { title: string }) {
+export default function Dialog({ title, inputProps }: { title: string; inputProps: string }) {
   const [visible, setVisible] = React.useState(false);
   const showDialog = () => {
     setVisible(true);
@@ -31,7 +32,7 @@ export default function Dialog({ title }: { title: string }) {
         onCancel={handleCancel}
         closeOnEsc={true}
       >
-        确定要退出登录吗？
+        <AddLabelForm title={title} inputProps={inputProps} />
       </Modal>
     </>
   );
