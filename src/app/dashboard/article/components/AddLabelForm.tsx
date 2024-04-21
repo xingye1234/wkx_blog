@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Tooltip } from "@douyinfe/semi-ui";
 import { IconHelpCircle } from "@douyinfe/semi-icons";
 
-export default ({ title = "label", inputProps }: { title: string, inputProps: string }) => {
+export default function AddLabelForm({ title = "label", inputProps }: { title: string, inputProps: string }) {
   const { Option } = Form.Select;
 
   return (

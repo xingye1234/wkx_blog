@@ -12,7 +12,7 @@ export default function Card({ title, link }: { title: string; link: string }) {
       const result = await fetch(`/api/${title}`).then((res) => res.json());
       setData(result.data);
     })();
-  }, []);
+  }, [title]);
 
   const handleDelLabel = (id: number) => () => {
     alert(id);
