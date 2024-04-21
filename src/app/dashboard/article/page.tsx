@@ -1,5 +1,4 @@
 import React from "react";
-import LabelCard from "./components/LabelCard";
 
 export default async function page() {
  
