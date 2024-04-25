@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { Tabs } from "./ui/tabs";
 import {
   Heading,
@@ -70,63 +69,67 @@ export function TabsContent() {
 //个人信息
 const PersonInfo = () => {
   return (
-    <DataList.Root>
-      <DataList.Item align="center">
-        <DataList.Label minWidth="88px">
-          <IconUser size="large" />
-          <span className="ml-1">Name</span>
-        </DataList.Label>
-        <DataList.Value>
-          <Badge color="jade" variant="soft" radius="full">
-            WangKeXing
-          </Badge>
-        </DataList.Value>
-      </DataList.Item>
-      <DataList.Item>
-        <DataList.Label minWidth="88px">
-          <IconIdCard size="large" />
-          <span className="ml-2">Age</span>
-        </DataList.Label>
-        <DataList.Value>
-          <Flex align="center" gap="2">
-            <Code variant="ghost">24</Code>
-          </Flex>
-        </DataList.Value>
-      </DataList.Item>
-      <DataList.Item>
-        <DataList.Label minWidth="88px">
-          <IconMailStroked1 size="large" />
-          <span className="ml-2">Email</span>
-        </DataList.Label>
-        <DataList.Value>
-          <span>1989163733@qq.com</span>
-        </DataList.Value>
-      </DataList.Item>
-      <DataList.Item>
-        <DataList.Label minWidth="88px">
-          <IconMapPin size="large" />
-          <span className="ml-2">Address</span>
-        </DataList.Label>
-        <DataList.Value>
-          <span>江西南昌</span>
-        </DataList.Value>
-      </DataList.Item>
+    <div className="w-full">
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconUser size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">Name</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">WangKeXing</span>
+        </div>
+      </div>
 
-      <DataList.Item>
-        <DataList.Label minWidth="88px">
-          <IconLayers size="large" /> <span className="ml-2">EDU</span>
-        </DataList.Label>
-        <DataList.Value>江西科技学院（本科）</DataList.Value>
-      </DataList.Item>
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconIdCard size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">Age</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">24</span>
+        </div>
+      </div>
 
-      <DataList.Item>
-        <DataList.Label minWidth="88px">
-          <IconArticle size="large" />
-          <span className="ml-2">Subject</span>
-        </DataList.Label>
-        <DataList.Value>计算机科学与技术</DataList.Value>
-      </DataList.Item>
-    </DataList.Root>
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconMailStroked1 size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">Email</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">1989163733@qq.com</span>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconMapPin size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">Address</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">江西南昌</span>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconMapPin size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">EDU</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">江西科技学院（本科）</span>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="w-28 text-[gray]">
+          <IconMapPin size="large" className="align-[-2px]" />
+          <span className="ml-1 text-lg">Subject</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-xl">计算机科学与技术</span>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -160,11 +163,11 @@ const ProjectHistory = () => {
           XX大屏可视化
         </Heading>
         <Flex direction="column" gap="4">
-          <Text as="p" size='5'>
+          <Text as="p" size="5">
             项目介绍:该项目将各项数据可视化处理，直观展示了各项计划进度、产品作废率和成品率以及车间各项数据变化，更加方便于领导管理
           </Text>
 
-          <Text as="p" size='5'>
+          <Text as="p" size="5">
             项目描述: 1.采用Vue3+Vite+Typescript+vue-router+element plus构建。
             2.接入海康威视视频，实时显示生产车间情况画面。
             3.对高频使用组件以及公共方法进行封装。 4.实现大屏各项适配。
@@ -179,7 +182,9 @@ const ProjectHistory = () => {
           xx中心管理系统
         </Heading>
         <Flex direction="column" gap="4">
-          <Text as="p" size="5">项目介绍:该管理系统集成xx大屏系统管理、xx报表管理</Text>
+          <Text as="p" size="5">
+            项目介绍:该管理系统集成xx大屏系统管理、xx报表管理
+          </Text>
 
           <Text as="p" size="5">
             项目描述: 1.采用Vue3+Vite+vue-router+element plus构建。
@@ -194,7 +199,9 @@ const ProjectHistory = () => {
           xx美术馆数字藏品库
         </Heading>
         <Flex direction="column" gap="4">
-          <Text as="p" size="5">项目介绍:主要用于展示美术馆藏品以及藏品细节查看</Text>
+          <Text as="p" size="5">
+            项目介绍:主要用于展示美术馆藏品以及藏品细节查看
+          </Text>
 
           <Text as="p" size="5">
             项目描述: 1.采用Vue3+Vite+Typescript+Unocss+vue-router+element
