@@ -112,7 +112,7 @@ const PersonInfo = () => {
 
       <div className="flex">
         <div className="w-28 text-[gray]">
-          <IconMapPin size="large" className="align-[-2px]" />
+          <IconLayers size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">EDU</span>
         </div>
         <div className="ml-4">
@@ -122,7 +122,7 @@ const PersonInfo = () => {
 
       <div className="flex">
         <div className="w-28 text-[gray]">
-          <IconMapPin size="large" className="align-[-2px]" />
+          <IconArticle size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Subject</span>
         </div>
         <div className="ml-4">
