@@ -158,75 +158,78 @@ const DummyContent = () => {
 const ProjectHistory = () => {
   return (
     <ScrollArea type="always" scrollbars="vertical">
-      <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="gray" trim="start">
-          XX大屏可视化
-        </Heading>
-        <Flex direction="column" gap="4">
-          <Text as="p" size="5">
-            项目介绍:该项目将各项数据可视化处理，直观展示了各项计划进度、产品作废率和成品率以及车间各项数据变化，更加方便于领导管理
-          </Text>
+      <div className="p-2 pr-8 mt-4">
+        <p className="text-2xl">XX大屏可视化</p>
+        <div className="flex flex-col">
+          <p className="text-base my-2">
+            <span className="font-bold text-lg">项目介绍</span>
+            :该项目将各项数据可视化处理，直观展示了各项计划进度、产品作废率和成品率以及车间各项数据变化，更加方便于领导管理
+          </p>
 
-          <Text as="p" size="5">
-            项目描述: 1.采用Vue3+Vite+Typescript+vue-router+element plus构建。
-            2.接入海康威视视频，实时显示生产车间情况画面。
-            3.对高频使用组件以及公共方法进行封装。 4.实现大屏各项适配。
-            5.对重复使用业务逻辑方法进行hooks封装。
-            6.实现打包文件的gzip压缩，组件的懒加载，实现对首页加载速度的提升。
-          </Text>
-        </Flex>
-      </Box>
+          <div className="text-base">
+            <span className="font-bold text-lg">项目描述</span>:
+            1.采用Vue3+Vite+Typescript+vue-router+element plus构建。
+            <p>2.接入海康威视视频，实时显示生产车间情况画面。</p>
+            <p>3.对高频使用组件以及公共方法进行封装。</p>
+            <p> 4.实现大屏各项适配。</p>
+            <p>5.对重复使用业务逻辑方法进行hooks封装。</p>
+            <p>
+              6.实现打包文件的gzip压缩，组件的懒加载，实现对首页加载速度的提升。
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="gray" trim="start">
-          xx中心管理系统
-        </Heading>
-        <Flex direction="column" gap="4">
-          <Text as="p" size="5">
-            项目介绍:该管理系统集成xx大屏系统管理、xx报表管理
-          </Text>
+      <div className="p-2 pr-8 mt-4">
+        <p className="text-2xl">xx中心管理系统</p>
 
-          <Text as="p" size="5">
-            项目描述: 1.采用Vue3+Vite+vue-router+element plus构建。
-            2.实现对大屏可视化的公共数据配置，例如滚动数据列表的滚动速度以及页面数据更新频率。
-            3.完成报表数据的增删改查。
-          </Text>
-        </Flex>
-      </Box>
+        <div className="mt-4 flex flex-col">
+          <p className="text-base">
+            <span className="font-bold text-lg">项目介绍</span>
+            :该管理系统集成xx大屏系统管理、xx报表管理
+          </p>
 
-      <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="gray" trim="start">
-          xx美术馆数字藏品库
-        </Heading>
-        <Flex direction="column" gap="4">
-          <Text as="p" size="5">
-            项目介绍:主要用于展示美术馆藏品以及藏品细节查看
-          </Text>
+          <div className="text-base">
+            <span className="font-bold text-lg">项目描述</span>:
+            1.采用Vue3+Vite+vue-router+element plus构建。
+            <p>
+              2.实现对大屏可视化的公共数据配置，例如滚动数据列表的滚动速度以及页面数据更新频率。
+            </p>
+            <p>3.完成报表数据的增删改查。</p>
+          </div>
+        </div>
+      </div>
 
-          <Text as="p" size="5">
-            项目描述: 1.采用Vue3+Vite+Typescript+Unocss+vue-router+element
-            plus构建。 2.实现网站的响应式布局，实现不同设备上的藏品完美展示。
-            3.实现图像金字塔，用户可以查看到藏品更加高清细节。
-            4.针对pc端和移动端搜索做不同的行为处理。
-            5.实现藏品的瀑布流以及图片懒加载，提高页面加载速度和用户体验。
-          </Text>
-        </Flex>
-      </Box>
-      <Box p="2" pr="8">
-        <Heading size="8" mb="2" color="gray" trim="start">
-          xx美术馆数字藏品库管理系统
-        </Heading>
-        <Flex direction="column" gap="4">
-          <Text as="p" size="5">
-            项目介绍:用于管理藏品以及藏品专题，对藏品数据进行可视化处理
-          </Text>
+      <div className="p-2 pr-8 mt-4">
+        <p className="text-2xl">xx美术馆数字藏品库与管理系统</p>
 
-          <Text as="p" size="5">
-            项目描述: 1.采用Vue3+Vite+vue-router+element plus构建。
-            2.实现藏品的标签、专题、藏品管理。 3.实现藏品的大文件切片上传。
-          </Text>
-        </Flex>
-      </Box>
+        <div className="mt-4 flex flex-col">
+          <p className="text-base">
+            <span className="font-bold text-lg">项目介绍</span>
+            :主要用于展示美术馆藏品以及藏品细节查看
+          </p>
+
+          <div className="text-base">
+            <span className="font-bold text-lg">项目描述</span>:
+            1.采用Vue3+Vite+Typescript+Unocss+vue-router+element plus构建。
+            <p>2.实现网站的响应式布局，实现不同设备上的藏品完美展示。</p>
+            <p>3.实现图像金字塔，用户可以查看到藏品更加高清细节。</p>
+            <p>4.针对pc端和移动端搜索做不同的行为处理。</p>
+            <p>
+              5.实现藏品的瀑布流以及图片懒加载，提高页面加载速度和用户体验。
+            </p>
+            <p>6.实现藏品的标签、专题、藏品管理。</p>
+            <p>7.实现藏品的大文件切片上传。</p>
+            <p>8.实现大文件图片压缩预览图。</p>
+          </div>
+          <div className="text-base">
+            <span className="font-bold text-lg">项目难点</span>
+            :主要用于展示美术馆藏品以及藏品细节查看
+            <p>1.如何实现大文件的压缩以及处理多种文件的转换。</p>
+            <p>2.如何实现藏品文件的图像金字塔，并在web中展示效果。</p>
+          </div>
+        </div>
+      </div>
     </ScrollArea>
   );
 };
