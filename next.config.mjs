@@ -19,7 +19,7 @@ const nextConfig = {
     imgPath: assetPrefix,
   },
   assetPrefix,
-  // basePath, //注：未知原因开发模式下启动找不到页面，需要注释掉
+  basePath, //注：未知原因开发模式下启动找不到页面，需要注释掉
   reactStrictMode: true,
   images: {
     unoptimized: true,
@@ -30,7 +30,8 @@ const nextConfig = {
     "@douyinfe/semi-illustrations",
   ],
   // distDir:"out",
-  output:"standalone",
+  // output:"standalone",
+  output:"export"
 };
 
 export default nextConfig;
