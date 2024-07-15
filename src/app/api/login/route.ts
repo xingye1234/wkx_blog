@@ -1,6 +1,4 @@
 import { prisma } from "@/data/index";
-import { signIn } from "@/app/auth";
-import { AuthError } from "next-auth";
 import { cookies } from "next/headers";
 import { signToken } from "@/app/utils/jwt";
 
@@ -16,7 +14,6 @@ export async function POST(req: Request) {
   let resData;
   if (users.length !== 0) {
     const token = signToken(username);
-    // console.log('------->',token);
     cookies().set("token", token);
 
     resData = {

@@ -29,7 +29,7 @@ export function SparklesPreview({ children }: { children?: React.ReactNode }) {
       ) : (
       <div className="flex flex-col items-center justify-center ">
         <h1
-          className="animate-fade-down animate-duration-2000 animate-delay-500 animate-ease-out md:text-7xl text-3xl lg:text-6xl font-bold text-center dark:text-white relative z-20 mb-6"
+          className="animate-fade-down animate-duration-2000 animate-delay-500 animate-ease-out md:text-7xl text-5xl lg:text-6xl font-bold text-center dark:text-white relative z-20 mb-6"
         >
           Wang KeXing
         </h1>

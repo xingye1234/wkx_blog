@@ -13,7 +13,7 @@ export default function Card({ title, content }: IPorps) {
         {/* {Icon ? <Icon className="h-5 w-5 text-gray-700" /> : null} */}
         <h3 className="ml-2 text-sm font-medium">{title}</h3>
       </div>
-      <p className="truncate rounded-xl bg-white px-4 py-8 text-center text-2xl">{content}</p>
+      <p className="truncate rounded-xl bg-white h-14 lg:h-20 text-2xl flex items-center justify-center">{content}</p>
     </div>
   );
 }

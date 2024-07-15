@@ -60,8 +60,8 @@ export function TabsContent() {
   ];
 
   return (
-    <div className="h-[20rem] md:min-h-[38rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full  items-start justify-start mt-1">
-      <Tabs tabs={tabs} />
+    <div className="min-h-[20rem] [perspective:1000px] relative b flex flex-col w-full  items-start justify-start mt-1">
+      <Tabs tabs={tabs}/>
     </div>
   );
 }
@@ -70,7 +70,7 @@ export function TabsContent() {
 const PersonInfo = () => {
   return (
     <div className="w-full">
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconUser size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Name</span>
@@ -80,7 +80,7 @@ const PersonInfo = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconIdCard size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Age</span>
@@ -90,7 +90,7 @@ const PersonInfo = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconMailStroked1 size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Email</span>
@@ -100,7 +100,7 @@ const PersonInfo = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconMapPin size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Address</span>
@@ -110,7 +110,7 @@ const PersonInfo = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconLayers size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">EDU</span>
@@ -120,7 +120,7 @@ const PersonInfo = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex my-3 md:my-0">
         <div className="w-28 text-[gray]">
           <IconArticle size="large" className="align-[-2px]" />
           <span className="ml-1 text-lg">Subject</span>
@@ -236,7 +236,7 @@ const ProjectHistory = () => {
 // 个人展望
 const PersonDevelop = () => {
   return (
-    <div className="flex justify-center h-full items-center italic text-[50px]">
+    <div className="flex justify-center h-full items-center italic text-[40px]">
       兢兢业业，踏踏实实
     </div>
   );
