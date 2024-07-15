@@ -236,7 +236,7 @@ const ProjectHistory = () => {
 // 个人展望
 const PersonDevelop = () => {
   return (
-    <div className="flex justify-center h-full items-center italic text-[50px]">
+    <div className="flex justify-center h-full items-center italic text-[40px]">
       兢兢业业，踏踏实实
     </div>
   );

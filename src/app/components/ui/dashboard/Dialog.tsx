@@ -14,7 +14,7 @@ export default function Dialog({ title }: { title: string }) {
   const handleOk = async () => {
     await fetch("/api/login").then((res) => res.json());
     setVisible(false);
-    router.push("/");
+    router.push("/login");
   };
   const handleCancel = () => {
     setVisible(false);

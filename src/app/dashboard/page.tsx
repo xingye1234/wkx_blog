@@ -12,7 +12,7 @@ const cards = [
 export default async function page() {
   return (
     <div className="animate-fade-left animate-duration-1000 animate-delay-100">
-      <div className="flex gap-3">
+      <div className="grid grid-cols-3 lg:grid-cols-5 gap-5">
         {cards.map((_, index) => (
           <Card key={index} title={_.title} content={_.content} />
         ))}

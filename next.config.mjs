@@ -31,7 +31,7 @@ const nextConfig = {
   ],
   // distDir:"out",
   // output:"standalone",
-  output:"export"
+  output:'export',
 };
 
 export default nextConfig;

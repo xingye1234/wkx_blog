@@ -34,7 +34,7 @@ export default function LoginForm() {
       <div>
         <IconUser size="extra-large" style={{ color: "white" }} />
         <input
-          className="ml-2 align-[8px] border-b-2 border-solid outline-none focus:border-[#bef264] bg-gray-100/0 text-white italic"
+          className="ml-2 align-[8px] border-b-2 border-solid outline-none focus:border-[#2563eb] bg-gray-100/0 text-white italic"
           placeholder="请输入用户名"
           {...register("username", { required: true, maxLength: 20 })}
         />
@@ -44,7 +44,7 @@ export default function LoginForm() {
         <IconLock size="extra-large" style={{ color: "white" }} />
         <input
           type="password"
-          className="ml-2 align-[8px] border-b-2 border-solid outline-none focus:border-[#bef264] bg-gray-100/0 text-white italic"
+          className="ml-2 align-[8px] border-b-2 border-solid outline-none focus:border-[#2563eb] bg-gray-100/0 text-white italic"
           placeholder="请输入用户名"
           {...register("password", {
             required: true,
@@ -58,7 +58,7 @@ export default function LoginForm() {
       <input
         type="submit"
         defaultValue="登录"
-        className="text-white bg-gray-100/50 py-1 px-6 cursor-pointer mt-2 rounded-md hover:bg-[#bef264]"
+        className="text-white bg-gray-100/50 py-1 px-6 cursor-pointer mt-2 rounded-md hover:bg-[#2563eb]"
       />
     </Form>
   );
