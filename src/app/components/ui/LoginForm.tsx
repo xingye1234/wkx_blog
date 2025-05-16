@@ -1,36 +1,52 @@
 "use client";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { IconLock, IconUser } from "@douyinfe/semi-icons";
-import { Form } from "@douyinfe/semi-ui";
 import { useRouter } from "next/navigation";
 import { Toast } from '@douyinfe/semi-ui';
 
-type username = {
+interface LoginFormData {
   username: string;
   password: string;
-};
+}
+
+interface ApiResponse {
+  code: number;
+  msg: string;
+}
+
 export default function LoginForm() {
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm<username>();
+  } = useForm<LoginFormData>({
+    defaultValues: {
+      username: '',
+      password: ''
+    }
+  });
+
   const router = useRouter();
-  const onSubmit: SubmitHandler<username> = async (data) => {
+
+  const onSubmit: SubmitHandler<LoginFormData> = async (data) => {
     const result = await fetch("/api/login", {
       method: "POST",
       body: JSON.stringify(data),
-    }).then((res) => res.json());
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((res) => res.json() as Promise<ApiResponse>);
+
     if (result.code == 200) {
       router.replace("/dashboard");
-    }else{
+    } else {
       Toast.error(result.msg)
     }
   };
 
   return (
-    <Form layout="vertical" onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <IconUser size="extra-large" style={{ color: "white" }} />
         <input
@@ -45,7 +61,7 @@ export default function LoginForm() {
         <input
           type="password"
           className="ml-2 align-[8px] border-b-2 border-solid outline-none focus:border-[#2563eb] bg-gray-100/0 text-white italic"
-          placeholder="请输入用户名"
+          placeholder="请输入密码"
           {...register("password", {
             required: true,
             minLength: 6,
@@ -60,6 +76,6 @@ export default function LoginForm() {
         defaultValue="登录"
         className="text-white bg-gray-100/50 py-1 px-6 cursor-pointer mt-2 rounded-md hover:bg-[#2563eb]"
       />
-    </Form>
+    </form>
   );
 }

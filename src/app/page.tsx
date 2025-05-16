@@ -1,13 +1,13 @@
 // "use client";
 import { Theme } from "@radix-ui/themes";
-import { ThemeProvider } from "next-themes";
 import Header from "./components/Header";
-import {SparklesPreview} from "./components/Sparkles";
+import { SparklesPreview } from "./components/Sparkles";
+import { ThemeProvider } from "next-themes";
 
 
 export default function Home() {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider enableSystem={false} attribute="class">
       <Theme>
         <Header />
         <main>

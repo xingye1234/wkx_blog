@@ -6,8 +6,8 @@ import { IconSun, IconMoon } from "@douyinfe/semi-icons";
 
 export default function DarkModeButton() {
   const { theme, setTheme } = useTheme();
-
   const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -17,9 +17,9 @@ export default function DarkModeButton() {
       {mounted && (
         <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
           {theme === "light" ? (
-            <IconSun size="extra-large" />
-          ) : (
             <IconMoon size="extra-large" />
+          ) : (
+            <IconSun size="extra-large" />
           )}
         </button>
       )}

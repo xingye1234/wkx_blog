@@ -17,13 +17,13 @@ export default function Header() {
               Posts
             </Link>
             <Link
-              href="/resume"
+              href="https://xingye1234.github.io/Resume-wkx/"
               className="mr-10 font-bold hover:text-blue-600"
             >
               Resume
             </Link>
           </div>
-          <div className="cursor-pointer hover:text-blue-600 md:hidden mr-4">
+          {/* <div className="cursor-pointer hover:text-blue-600 md:hidden mr-4">
             <SemiTooltip
               content={
                 <article>
@@ -37,7 +37,7 @@ export default function Header() {
                   </p>
                   <p>
                     <Link
-                      href="/resume"
+                      href="https://xingye1234.github.io/Resume-wkx/"
                       className="w-full mr-10 font-bold hover:text-blue-600"
                     >
                       Resume
@@ -50,7 +50,7 @@ export default function Header() {
             >
               <IconMenu size="extra-large" />
             </SemiTooltip>
-          </div>
+          </div> */}
           <ToolTip />
           <DarkModeButton />
         </div>
